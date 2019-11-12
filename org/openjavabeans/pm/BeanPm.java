@@ -8,7 +8,7 @@ class BeanPm
     @Bean
     public void
     create_directory_structure() {
-        mkdir -p "$dirs"
+        mkdir -p "$1"
     }
 
     @Bean
@@ -40,7 +40,7 @@ class BeanPm
         echo '*.java linguist-language=Java' > .gitattributes
         echo "$1" > README.TXT
         cd "$path"
-        echo "import Beans.System.SystemUtilsJavaBeanCoreServiceProviderAdapterFactory;\n\n@Bean\nclass $1 implements java.io.Serializable\n{\n    public final void\n    main() {\n        \n    }\n}" > "$1.java"
+        echo -e "import Beans.System.SystemUtilsJavaBeanCoreServiceProviderAdapterFactory;\n\n@Bean\nclass $1 implements java.io.Serializable\n{\n    @Beans\n    public final void\n    main() {\n        \n    }\n}" > "$1.java"
     }
 
     @Bean
