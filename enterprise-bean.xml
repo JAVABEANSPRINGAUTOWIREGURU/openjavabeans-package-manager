@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<JavaBean CLASS="TestProject">
+<JavaBean CLASS="openjavabeans-bean">
   <Properties>
     <Property NAME="BEAN">BEAN</Property>
   </Properties>
