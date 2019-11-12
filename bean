@@ -1,0 +1,3 @@
+#!/bin/bash
+
+openjavabean org/openjavabeans/pm/bootstrap/Bootstrap.java
